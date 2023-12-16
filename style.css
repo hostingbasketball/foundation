@@ -1,0 +1,63 @@
+:root {
+    --main-color: #007BFF;
+    --secondary-color: #333;
+    --white-color: #fff;
+    --main-font-size: 2em;
+    --secondary-font-size: 1.5em;
+    --main-spacing: 20px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center everything */
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Change from space-between to center */
+    width: 80%; /* Specify a width */
+    padding: var(--main-spacing) 0;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+}
+
+.header img {
+    width: 50px; /* Adjust as needed */
+    height: auto;
+    margin-right: var(--main-spacing);
+    margin-left: var(--main-spacing); /* Add space before the image */
+}
+.header img:first-child {
+    margin-left: var(--main-spacing);
+}
+
+.blurry-image {
+    filter: sepia(0.5) contrast(1.5) saturate(0.8) blur(1px);
+}
+
+.header h1 {
+    font-size: var(--main-font-size);
+    margin-top: 0;
+    color: var(--main-color);
+}
+
+/* Section styles */
+.section, .hero {
+    width: 80%; /* Specify a width */
+}
+
+.section img, .hero img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.section h2, .hero h2 {
+    font-size: var(--secondary-font-size);
+    margin-bottom: var(--main-spacing);
+    color: var(--main-color);
+}
